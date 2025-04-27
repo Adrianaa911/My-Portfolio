@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/f8e1a90484.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <title>Adriana Ciceu's Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  
+  <body>
+    <!-- Navigation bar -->
+    <div class="navigation">
+      <nav class="nav">
+        <img src="images/logoAc.jpg" alt="" class="logo" />
+        <ul id="menu-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li>
+            <a href="docs/Cv (1).pdf" download class="download">Download CV</a>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-icon">
+          <i class="fa-solid fa-bars" onclick="displayMenu()"> </i>
+        </div>
+      </nav>
+    </div>
+    <!-- end of Navigation bar -->
+    <!-- Start of  -->
+    <div class="about-section">
+      <div><img src="images/me.png" id="image" /></div>
+      <div class="about-info">
+        <header id="header">
+          <div class="container">
+            <h1>Adriana Rodica Ciceu</h1>
+            <p class="title">Junior Software Developer</p>
+          </div>
+        </header>
+        <div class="containerAbout">
+          <h2>About Me</h2>
+          <p class="textP">
+            Welcome to my portfolio! I'm a passionate Junior Software Developer with a eager to showcase my skills, projects, and growth in the world of software development. 
+            With a strong foundation in coding and a commitment to continuous learning. I've built and contributed to various projects that demonstrate my ability to solve problems, collaborate with teams, and deliver efficient, clean code.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Skills section-->
+    <h2 class="devtitle">Development Skills</h2>
+    <section id="skills">
+      <img src="images/html-5.png" alt="" />
+      <img src="images/css-3.png" alt="" />
+      <img src="images/java-script.png" alt="" />
+      <img src="images/python.png" alt="" />
+      <img src="images/sql-server.png" alt="" />
+      <img src="images/mysql.png" alt="" />
+      <img src="images/database-storage.png" alt="" />
+    </section>
+    <!-- wwww.flaticon.com    => source-->
+
+    <!-- Projects section -->
+    <section id="projects">
+      <h2 class="projects">Projects</h2>
+      <div class="container">
+
+        <div class="project">
+          <h3>Fitness Fit</h3>
+          <p>
+            Built with HTML and CSS for a clean, modern design, our website offers an easy-to-navigate experience that helps you find the perfect fitness routine, plan, and program to suit your needs.
+             This project can be accessed here: https://adrianaa911.github.io/FitnessFit/
+
+          </p>
+          <a
+            href="https://adrianaa911.github.io/FitnessFit/"
+            target="_blank"
+            >Fitness Fit</a
+          >
+        </div> 
+
+        <div class="project">
+          <h3>Fortune Teller</h3>
+          <p>
+            Created a functional magic 8 ball - fortune teller and I've used the
+            basic fundamentals that you need as a developer (HTML5, CSS3 and
+            JavaScript). This project can be accessed here:
+          </p>
+          <a href="https://adrianaa911.github.io/FortuneTeller/" target="_blank"
+            >Fortune Teller</a
+          >
+        </div>
+        <!--
+            <div class="project">
+                <h3>Peek A Boo Monkey</h3>
+                <p>Created a moving emoji, a peekaboo monkey using HTML, CSS3 and JavaScript. With this small project I’ve learned how I can use emojis and make it look like it’s moving. To view the project, click here:</p>
+                <a href="https://adrianaa911.github.io/PeekabooMonkey/"target="_blank">Peek A Boo Monkey</a>
+            </div> -->
+
+      
+
+        <div class="project">
+          <h3>Choose your adventure</h3>
+          <p>
+            Using Python I've created a funny game, an adventure where you have
+            to choose your path. On the journey you'll come across with various
+            obstacles. Whick way would you take? This project can be accessed
+            here:
+          </p>
+          <a
+            href="https://replit.com/@adrianamistodi/chooseyouradventuregamepy-1?v=1#main.py"
+            target="_blank"
+            >Choose your adventure</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="get">Get In Touch with me</h2>
+      </div>
+    </section>
+
+    
+    <!--
+           <form>
+                <input type="text" id="text" placeholder="Your Name">
+                <input type="email"class="email" placeholder="Your Email">
+                <textarea class="message"placeholder="Your Message"></textarea>
+                <button class="submit" type="submit">Send Message</button>
+            </form> -->
+    <div class="contact-form">
+        <div class="icons">
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></i></a>
+            <a href="#"><i class="fa-solid fa-envelope"></i></i></a>
+          </div>
+            <div class="wrapper"> 
+                <div id="error_message" style="color:red; margin-top:10px;"> 
+                </div> 
+
+                <form action="" 
+                      id="myform" 
+                      onsubmit="return validate();"> 
+                    <div class="input_field"> 
+                        <input type="text" 
+                               placeholder="Name" 
+                               id="name"> 
+                    </div> 
+                    <div class="input_field"> 
+                        <input type="text" 
+                               placeholder="Subject" 
+                               id="subject"> 
+                    </div> 
+                    <div class="input_field"> 
+                        <input type="text" 
+                               placeholder="Phone" 
+                               id="phone"> 
+                    </div> 
+                    <div class="input_field"> 
+                        <input type="text" 
+                               placeholder="Email" 
+                               id="email"> 
+                    </div> 
+                    <div class="input_field"> 
+                        <textarea placeholder="Message" 
+                                  id="message"> 
+                        </textarea> 
+                    </div> 
+                    <div class="btn"> 
+                        <input type="submit"> 
+                    </div> 
+                </form> 
+            </div>
+        </div> 
+    <footer>
+      <div class="Mypcontainer">
+        &copy; Adriana R. Ciceu 2025 | Portofolio
+      </div>
+    </footer>
+  </body>
+</html>
